@@ -1,0 +1,305 @@
+body {
+    background-color: rgb(86, 158, 86);
+    font-family: sans-serif;
+    margin: 0;
+    color: whitesmoke;
+}
+
+header img {
+    margin-top: 3px;    
+    height: 60px;
+}
+
+header img:hover {
+    height: 80px;
+}
+
+header * {
+    display: inline;
+}
+
+header li {
+    margin: 3vw;
+}
+
+header li a {
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 0.3em;
+    font-size: 20px;
+}
+
+header li a:hover {
+    color: rgb(162, 224, 11);
+}
+
+header {
+    background-color: rgba(6, 7, 6, 0.747);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 25px 0 black;
+}
+
+.indexhero {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;    
+    background-image: url(/tenniscourt.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.indexhero h1 {
+    font-size: 5em;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.banorhero {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(/tennisbanorrdy.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.banorhero h1 {
+    font-size: 5em;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.banorhero a {
+    display:block;
+    width: 150px;
+    color: rgb(86, 158, 86);
+    padding: 0.3em;
+    border: 3px solid rgba(0, 0, 0, 0);
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.418);
+    text-decoration: none;
+}
+
+.banorhero a:hover {
+    color: rgb(11, 12, 11);
+    background-color: rgba(255, 255, 255, 0.418);
+}
+
+.bastuhero {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;    
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(/saunardy.jpg);
+    background-size: cover;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.banorklass h2 {
+    font-size: 3em;
+}
+
+.bastuklass h2 {
+    font-size: 3em;
+}
+
+.bastuhero h1 {
+    font-size: 5em;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.kaltext {
+    width: 45%;
+}
+
+.omkl {
+    background-color: #0e3117;
+    margin-top: 4%;
+}
+
+.omkl h3 {
+    margin-left: 4%;
+}
+
+.omkl p {
+    margin-left: 4%;
+    margin-right: 50%;
+}
+
+.bastubody div {
+    margin: 4%;
+}
+
+.banorbody div {
+    margin: 4%;
+}
+
+main {
+    background-image: linear-gradient(rgba(30, 70, 43, 0.45),rgba(30, 70, 43, 0.45)), url(/newaboutimage.jpg);
+    background-position: center;
+    background-size: cover;
+    border: 2px solid black;
+}
+
+main h3 {
+    font-size: 25px;
+    margin-left: 4%;
+    margin-right: 50%;
+}
+
+main p {
+    margin-left: 4%;
+    margin-right: 50%;
+}
+
+* {
+    box-sizing: border-box;
+}
+ul {
+    list-style-type: none;
+}
+
+.month {
+    padding: 70px 25px;
+    width: 100%;
+    background: #0e3117;
+    text-align: center;
+}
+
+.month ul {
+    margin: 0;
+    padding: 0;
+}
+
+.month ul li {
+    color: whitesmoke;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.month .prev {
+    float: left;
+    padding-top: 10px;
+}
+  
+.month .next {
+    float: right;
+    padding-top: 10px;
+}
+
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color:grey;
+}
+
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: black;
+    text-align: center;
+}
+
+.days {
+    padding: 10px 0;
+    background: whitesmoke;
+    margin: 0;
+}
+  
+.days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: black;
+}
+  
+.days li .active {
+    padding: 5px;
+    background: rgb(86, 158, 86);
+    color: whitesmoke !important;
+}
+
+.riktigakal {
+    border: 2px solid black;
+    width: 50%;
+}
+
+.kalenderdiv{
+    margin-top: 4%;
+    margin-left: 4%;
+    margin-right: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+input {
+    display: flex;
+    font-family: sans-serif;
+    font-size: 16px;
+    width: 20%;
+    padding: 10px 20px;
+    margin: 8px 0px;
+    box-sizing: border-box;
+    border: 2px solid whitesmoke;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.712);
+    color: whitesmoke;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=number] {
+    width: 10%;
+}
+
+input[type=number]:focus {
+    width: 15%;
+}
+
+input:focus {
+    background-color: rgb(255, 255, 255, 0.418);
+    color: black;
+    width: 25%;
+}
+
+input:hover {
+    background-color: rgb(255, 255, 255, 0.418);
+    color: black;
+}
+
+input[type=submit] {
+    background-color: rgb(162, 224, 11);
+    width: 15%;
+}
+
+input[type=submit]:hover {
+    background-color: rgba(12, 11, 11, 0.418);
+    color: rgb(162, 224, 11);
+}
