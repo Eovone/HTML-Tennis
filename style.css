@@ -61,9 +61,13 @@ header {
 }
 
 .indexhero h1 {
-    font-size: 5em;
+    font-size: 7vw;
     margin-top: 0;
     margin-bottom: 0.5em;
+}
+
+.indexhero h2 {
+    font-size: 3vw;
 }
 
 .banorhero {
@@ -81,7 +85,7 @@ header {
 }
 
 .banorhero h1 {
-    font-size: 5em;
+    font-size: 7vw;
     margin-top: 0;
     margin-bottom: 0.5em;
 }
@@ -118,21 +122,26 @@ header {
 }
 
 .banorklass h2 {
-    font-size: 3em;
+    font-size: 4vw;
 }
 
 .bastuklass h2 {
-    font-size: 3em;
+    font-size: 4vw;
 }
 
 .bastuhero h1 {
-    font-size: 5em;
+    font-size: 7vw;
     margin-top: 0;
     margin-bottom: 0.5em;
 }
 
 .kaltext {
     width: 45%;
+    font-size: 18px;
+}
+
+.kaltext h3 {
+    font-size: 24px;
 }
 
 .omkl {
@@ -142,11 +151,13 @@ header {
 
 .omkl h3 {
     margin-left: 4%;
+    font-size: 24px;
 }
 
 .omkl p {
     margin-left: 4%;
     margin-right: 50%;
+    font-size: 18px;
 }
 
 .bastubody div {
@@ -165,7 +176,7 @@ main {
 }
 
 main h3 {
-    font-size: 25px;
+    font-size: 30px;
     margin-left: 4%;
     margin-right: 50%;
 }
@@ -173,6 +184,7 @@ main h3 {
 main p {
     margin-left: 4%;
     margin-right: 50%;
+    font-size: 18px;
 }
 
 * {
