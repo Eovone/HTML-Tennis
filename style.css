@@ -98,18 +98,37 @@ main p {
     font-size: 24px;
 }  
 
-.kalenderdiv{
+.kalenderdiv {
     margin-top: 4%;
     margin-left: 4%;
     margin-right: 4%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
+
+table {
+    width: 400px;
+    height: 300px;
+    border: 2px solid black;
+}
+
+th {
+    width: 35px;
+    height: 35px;
+}
+
 tr {
-    size-adjust: auto;
     background-color: grey;
-  }
+}
+
+tr:hover {
+    background-color: rgb(162, 224, 11);
+}
+
+th:hover {
+    background-color: black;
+}
 
 .omkl {
     margin-top: 4%;
@@ -242,6 +261,10 @@ input[type=submit]:hover {
     }
     .indexhero h2 {
         font-size: 5vw;
+    }
+    table {
+        width: 200px;
+        height: 150px;
     }
     .banorhero h1 {
         font-size: 12vw;
