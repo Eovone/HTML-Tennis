@@ -14,16 +14,22 @@
     <body class="banorbody">
 
         <header>
-            <a href="index.html">
-            <img src="/tennisball.png" alt="tennisboll"></a>
-            <nav>
-                <ul>
-                    <li><a href="index.html#kalender">Kalender</a></li>
-                    <li><a href="index.html#omkl">Omklädningsrum</a></li>
-                    <li><a href="banor.html">Banor</a></li>
-                    <li><a href="bastu.html">Bastu</a></li>
-                </ul>
-            </nav>
+            <div class="topnav" id="myTopnav">
+                <a href="index.html">Start</a>
+                <a href="index.html#kalender">Kalender</a>
+                <a href="index.html#omkl">Omklädningsrum</a>
+                <div class="dropdown">
+                  <button class="dropbtn">Boka
+                    <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <a href="banor.html" class="active">Bana</a>
+                    <a href="bastu.html">Bastu</a>
+                  </div>
+                </div>
+                <a href="index.html#omoss">Om oss</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+              </div>
         </header>
 
         <section class="banorhero">                       

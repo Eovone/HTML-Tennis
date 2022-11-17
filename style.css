@@ -4,48 +4,57 @@ body {
     margin: 0;
     color: whitesmoke;
 }
-
-header img {
-    margin-top: 3px;    
-    height: 60px;
-}
-
-header img:hover {
-    height: 80px;
-}
-
-header * {
-    display: inline;
-}
-
-header li {
-    margin: 2vw;
-}
-
-header li a {
+.topnav {
+    background-color: rgb(6, 7, 6);
+    overflow: hidden;
+}  
+.topnav a {
+    float: left;
+    display: block;
     color: whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    padding: 0.3em;
-    font-size: 20px;
+    font-size: 17px;
+}  
+.active {
+    background-color: rgb(86, 158, 86);
+    color: whitesmoke;
 }
-
-header li a:hover {
-    color: rgb(162, 224, 11);
+.topnav .icon {display: none;}
+.dropdown {
+    float: left;
+    overflow: hidden;
 }
-
-header {
-    background-color: rgba(6, 7, 6, 0.747);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: whitesmoke;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(33, 34, 33);
+    min-width: 160px;
     box-shadow: 0 10px 25px 0 black;
+    z-index: 1;
 }
-
+.dropdown-content a {
+    float: none;
+    color: whitesmoke;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}  
+.topnav a:hover, .dropdown:hover .dropbtn {color: rgb(162, 224, 11);}  
+.dropdown-content a:hover {color: rgb(162, 224, 11);}  
+.dropdown:hover .dropdown-content {display: block;}
 .indexhero {
     width: 100%;
     height: 100vh;
@@ -59,45 +68,33 @@ header {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-
 .indexhero h1 {
     font-size: 7vw;
     margin-top: 0;
     margin-bottom: 0.5em;
 }
-
-.indexhero h2 {
-    font-size: 3vw;
-}
-
+.indexhero h2 {font-size: 3vw;}
 main {
     background-image: linear-gradient(rgba(30, 70, 43, 0.45),rgba(30, 70, 43, 0.45)), url(/newaboutimage.jpg);
     background-position: center;
     background-size: cover;
     border: 2px solid black;
 }
-
 main h3 {
     font-size: 30px;
     margin-left: 4%;
     margin-right: 50%;
 }
-
 main p {
     margin-left: 4%;
     margin-right: 50%;
     font-size: 18px;
 }
-
 .kaltext {
     width: 45%;
     font-size: 18px;
 }
-
-.kaltext h3 {
-    font-size: 24px;
-}  
-
+.kaltext h3 {font-size: 24px;}  
 .kalenderdiv {
     margin-top: 4%;
     margin-left: 4%;
@@ -106,45 +103,28 @@ main p {
     align-items: center;
     justify-content: space-around;
 }
-
 table {
     width: 400px;
     height: 300px;
     border: 2px solid black;
 }
-
 th {
     width: 35px;
     height: 35px;
 }
-
-tr {
-    background-color: grey;
-}
-
-tr:hover {
-    background-color: rgb(162, 224, 11);
-}
-
-th:hover {
-    background-color: black;
-}
-
-.omkl {
-    margin-top: 4%;
-}
-
+tr {background-color: grey;}
+tr:hover {background-color: rgb(162, 224, 11);}
+th:hover {background-color: black;}
+.omkl {margin-top: 4%;}
 .omkl h3 {
     margin-left: 4%;
     font-size: 24px;
 }
-
 .omkl p {
     margin-left: 4%;
     margin-right: 50%;
     font-size: 18px;
 }
-
 .banorhero {
     width: 100%;
     height: 50vh;
@@ -158,21 +138,13 @@ th:hover {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-
 .banorhero h1 {
     font-size: 7vw;
     margin-top: 0;
     margin-bottom: 0.5em;
 }
-
-.banorklass h2 {
-    font-size: 4vw;
-}
-
-.banorbody div {
-    margin: 4%;
-}
-
+.banorklass h2 {font-size: 4vw;}
+.banorklass {margin: 4%;}
 .bastuhero {
     width: 100%;
     height: 50vh;
@@ -186,21 +158,13 @@ th:hover {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-
-.bastuklass h2 {
-    font-size: 4vw;
-}
-
+.bastuklass h2 {font-size: 4vw;}
 .bastuhero h1 {
     font-size: 7vw;
     margin-top: 0;
     margin-bottom: 0.5em;
 }
-
-.bastubody div {
-    margin: 4%;
-}
-
+.bastuklass {margin: 4%;}
 input {
     display: flex;
     font-family: sans-serif;
@@ -215,88 +179,66 @@ input {
     color: whitesmoke;
     transition: width 0.4s ease-in-out;
 }
-
-input[type=number] {
-    width: 5%;
-}
-
-input[type=number]:focus {
-    width: 10%;
-}
-
+input[type=number] {width: 5%;}
+input[type=number]:focus {width: 10%;}
 input:focus {
     background-color: rgb(255, 255, 255, 0.418);
     color: black;
     width: 25%;
 }
-
 input:hover {
     background-color: rgb(255, 255, 255, 0.418);
     color: black;
 }
-
 input[type=submit] {
     background-color: rgb(162, 224, 11);
     width: 10%;
 }
-
 input[type=submit]:hover {
     background-color: rgba(12, 11, 11, 0.418);
     color: rgb(162, 224, 11);
 }
-
-@media (max-width:600px) {
-    header img {         
-        height: 40px;
+@media (max-width:600px) {  
+    .topnav a:not(:first-child), .dropdown .dropbtn {
+        display: none;
     }
-    header img:hover {
-        height: 50px;
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }  
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
     }
-    header li a { 
-        padding: 0em;       
-        font-size: 12px;
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
     }
-    .indexhero h1 {
-        font-size: 12vw;
-    }
-    .indexhero h2 {
-        font-size: 5vw;
-    }
-    main h3 {
-        margin-right: 4%;
-    }    
-    main p {
-        margin-right: 4%;
-    }
-    .kalenderdiv {
-        flex-direction: column;
-    }
-    .kaltext {
+    .topnav.responsive .dropdown {float: none;}
+    .topnav.responsive .dropdown-content {position: relative;}
+    .topnav.responsive .dropdown .dropbtn {
+        display: block;
         width: 100%;
+        text-align: left;
     }
+    .indexhero h1 {font-size: 12vw;}
+    .indexhero h2 {font-size: 5vw;}
+    main h3 {margin-right: 4%;}    
+    main p {margin-right: 4%;}
+    .kalenderdiv {flex-direction: column;}
+    .kaltext {width: 100%;}
     table {
         width: 100%;
         height: 150px;
     }
-    .banorhero h1 {
-        font-size: 12vw;
-    }
-    .bastuhero h1 {
-        font-size: 12vw;
-    }
-    input {        
-        width: 60%;       
-    }
-    input[type=number] {
-        width: 20%;
-    }    
-    input[type=number]:focus {
-        width: 30%;
-    }
-    input:focus {        
-        width: 70%;
-    }
-    input[type=submit] {        
-        width: 30%;
-    }
+    .banorhero h1 {font-size: 12vw;}
+    .bastuhero h1 {font-size: 12vw;}
+    input {width: 60%;}
+    input[type=number] {width: 20%;}    
+    input[type=number]:focus {width: 30%;}
+    input:focus {width: 70%;}
+    input[type=submit] {width: 30%;}
 }
