@@ -62,8 +62,9 @@ function validering () {
     
   }
 
-  //  FUNKAR EJ ATM Om allt är validerat, byt titlarna så man ser att det har "registrerat"
+  // Om allt går genom validering, byt titlarna och dölj formulär så man ser att det har "registrerat"
   if (valid==0) {
+    document.getElementById("myForm").style.display="none";
     document.getElementById("titel1").style.display="none";
     document.getElementById("titel2").style.visibility="visible";
   }
