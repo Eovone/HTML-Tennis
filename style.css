@@ -138,6 +138,9 @@ th:hover {background-color: black;}
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+#titel2 {
+    visibility: hidden;
+}
 .banorhero h1 {
     font-size: 7vw;
     margin-top: 0;

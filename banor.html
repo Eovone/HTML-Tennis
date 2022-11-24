@@ -39,49 +39,59 @@
         <div class="banorklass">
 
             <div>
-                <h2>Boka din bana här!</h2>
+                <h2 id="titel1">Boka din bana här!</h2>
+                <h2 id="titel2">Din tid är registrerad!</h2>
             </div>
 
             <div>
                 <form>
 
+                    <!--JS tillagt, sker onload-->
                     <div>
                         <label for="datum">Välj dag för Banbokning:</label>
                         <input type="date" id="datum" name="datum" required>
                     </div>
 
+                    <!--Validering i form av min/max och satt typ till siffror-->
                     <div>
                         <label for="antalbanor">Antal Banor:</label>
                         <input type="number" id="antalbanor" name="antalbanor" min="1" max="4" value="1">
                     </div>
 
+                    <!--Validering i form av min/max och satt typ till siffror-->
                     <div>
                         <label for="antaltimmar">Antal Timmar:</label>
                         <input type="number" id="antaltimmar" name="antaltimmar" min="1" max="6" value="1">
                     </div>
 
+                    <!--JS tillagt, så att endast svenska alfabetet, bindestreck och mellanslag är tillåtna-->
                     <div>
                         <label for="fnamn">Förnamn:</label>
-                        <input type="text" id="fnamn" name="fnamn" placeholder="Ulf" required>
+                        <input type="text" id="fnamn" name="fnamn" class="namn" placeholder="Ulf" required>
                     </div>
 
+                    <!--JS tillagt, så att endast svenska alfabetet, bindestreck och mellanslag är tillåtna-->
                     <div>
                         <label for="enamn">Efternamn:</label>
-                        <input type="text" id="enamn" name="enamn" placeholder="Kristersson" required>
+                        <input type="text" id="enamn" name="enamn" class="namn" placeholder="Kristersson" required>
                     </div>
 
+                    <!--Validering i form av min och max till 10 karaktärer-->
+                    <!--JS tillagt, så att man endast kan skriva siffror-->
                     <div>
                         <label for="mobil">Mobilnummer:</label>
-                        <input type="tel" id="mobil" name="mobil" placeholder="0707123456" required>
+                        <input type="tel" id="mobil" name="mobil" placeholder="0707123456" minlength="10" maxlength="10" required>
                     </div>
 
+                    <!--Validering inbyggt i input type="email", kräver av användaren att inputen måste innehålla @-->
                     <div>
                         <label for="epost">E-postadress:</label>
                         <input type="email" id="epost" name="epost" placeholder="ulf.kristersson@gmail.com" required>
                     </div>
                     
+                    <!--JS tillagt, så när man klickar på skicka-knappen så sker valideringen-->
                     <div>
-                        <input type="submit">
+                        <input type="submit" onclick="validering()">
                     </div>
 
                 </form>
