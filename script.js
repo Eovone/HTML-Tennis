@@ -4,9 +4,10 @@ window.onload = function () {
   let date = new Date();
   let minDate = new Date(date.getFullYear(), date.getMonth()+1,date.getDate());
   let minDateStr = "" + minDate.getFullYear() + "-" + minDate.getMonth() + "-" + minDate.getDate();
-  let minimumDatum = document.getElementById("datum");
-  // Får error för denna inte används på index.html, inga errors på andra sidor.
-  minimumDatum.setAttribute("min", minDateStr);
+  let minimumDatum = document.getElementById("datum");  
+  if (minimumDatum) {
+    minimumDatum.setAttribute("min", minDateStr);
+  }  
 }
 
 function resizeFunction() {

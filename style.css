@@ -138,9 +138,7 @@ th:hover {background-color: black;}
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-#titel2 {
-    visibility: hidden;
-}
+#titel2 {visibility: hidden;}
 .banorhero h1 {
     font-size: 7vw;
     margin-top: 0;
@@ -202,9 +200,7 @@ input[type=submit]:hover {
     color: rgb(162, 224, 11);
 }
 @media (max-width:600px) {  
-    .topnav a:not(:first-child), .dropdown .dropbtn {
-        display: none;
-    }
+    .topnav a:not(:first-child), .dropdown .dropbtn {display: none;}
     .topnav a.icon {
         float: right;
         display: block;
