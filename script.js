@@ -2,8 +2,8 @@
 window.onload = function () {
   // Vid bokning av bastu eller bana, gör detta så man inte kan välja ett datum bakåt i tiden
   let date = new Date();
-  let minDate = new Date(date.getFullYear(), date.getMonth()+1,date.getDate());
-  let minDateStr = "" + minDate.getFullYear() + "-" + minDate.getMonth() + "-" + minDate.getDate();
+  let minDate = new Date(date.getFullYear(), date.getMonth(),date.getDate()+1);
+  let minDateStr = minDate.toISOString().split("T")[0];
   let minimumDatum = document.getElementById("datum");  
   if (minimumDatum) {
     minimumDatum.setAttribute("min", minDateStr);
